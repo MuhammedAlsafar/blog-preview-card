@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    @font-face {
+      font-family: "Figtree";
+      src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "FigtreeBold";
+      src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+      font-weight: 800;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    main {
+      background-color: hsl(0, 0%, 100%);
+      width: 384px;
+      border-radius: 20px;
+      border: 1px solid black;
+      box-shadow: 8px 8px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+
+    #info {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    #tag {
+      background-color: hsl(47, 88%, 63%);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-family: 'FigtreeBold';
+      font-size: 14px;
+    }
+
+    #date {
+      font-family: 'Figtree';
+      font-size: 14px;
+    }
+
+    #heading {
+      font-family: 'FigtreeBold';
+      font-size: 24px;
+    }
+
+    #paragraph {
+      font-family: 'Figtree';
+      font-size: 16px;
+      color: hsl(0, 0%, 50%);
+    }
+
+    #avatar-container {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-family: 'FigtreeBold';
+      font-size: 14px;
+      gap: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <img alt="code" src="assets/images/illustration-article.svg">
+
+    <div id="info">
+      <div id="tag">
+        Learning
+      </div>
+      <p id="date">Published 21 Dec 2023 </p>
+      <p id="heading">HTML & CSS foundations</p>
+      <p id="paragraph">These languages are the backbone of every website, defining structure, content, and
+        presentation.</p>
+    </div>
+
+    <div id="avatar-container">
+      <img alt="avatar" src="assets/images/image-avatar.webp" width="32">
+      <p id="name">Greg Hooper</p>
+    </div>
+  </main>
+</body>
+
+</html>
